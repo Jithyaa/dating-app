@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
 
 const CreateAc = () => {
   return (
@@ -125,6 +126,7 @@ const CreateAc = () => {
           Continue
         </button>
       </div>
+      <Footer/>
     </div>
   )
 }

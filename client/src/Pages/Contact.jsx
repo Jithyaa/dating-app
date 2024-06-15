@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="min-h-screen py-12 bg-gray-300">
+      <div className="min-h-screen py-12 bg-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="p-6 text-black">

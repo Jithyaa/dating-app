@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="relative flex items-center justify-between h-16">
         <div className="absolute inset-y-0 left-0 flex items-center">
           <Link to="/user/" className="p-2 text-gray-900 dark:text-white font-bold text-2xl hover:text-white ">
-            Datify❤️
+            Dating-app❤️
           </Link>
         </div>
        
