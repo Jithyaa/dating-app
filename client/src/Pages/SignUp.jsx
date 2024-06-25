@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FcGoogle } from 'react-icons/fc';
 
 const SignUp = () => {
+  const handleGoogleSignIn = () => {
+    // Implement your Google sign-in logic here
+    console.log('Google sign-in clicked');
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 pt-10">
       <div className="bg-white rounded-lg shadow dark:bg-gray-800 p-6 space-y-4 md:space-y-6 sm:p-8 max-w-md w-full">
@@ -14,14 +19,14 @@ const SignUp = () => {
               htmlFor="username"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your username
+              Your name
             </label>
             <input
               type="text"
               name="username"
               id="username"
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Your username"
+              placeholder="Enter your name"
               required
             />
           </div>
@@ -41,7 +46,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div>
+          {/* <div>
             <label
               htmlFor="password"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -72,8 +77,8 @@ const SignUp = () => {
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
             />
-          </div>
-          <div className="flex items-start">
+          </div> */}
+          {/* <div className="flex items-start">
             <div className="flex items-center h-5">
               <input
                 id="terms"
@@ -97,7 +102,7 @@ const SignUp = () => {
                 </a>
               </label>
             </div>
-          </div>
+          </div> */}
           <button
             type="submit"
             className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
@@ -114,6 +119,15 @@ const SignUp = () => {
             </Link>
           </p>
         </form>
+        <div className="flex items-center justify-center mt-6">
+          <button
+            onClick={handleGoogleSignIn}
+            className="flex items-center bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-600"
+          >
+            <FcGoogle className="w-5 h-5 mr-2" />
+            Sign up with Google
+          </button>
+        </div>
       </div>
     </div>
   );

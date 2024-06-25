@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
+  const handleGoogleLogin = () => {
+    // Implement your Google sign-in logic here
+    console.log('Google sign-in clicked');
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 pt-10 px-6">
       <div className="w-full bg-white rounded-lg shadow dark:border sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -26,7 +31,7 @@ const Login = () => {
                 required
               />
             </div>
-            <div>
+            {/* <div>
               <label
                 htmlFor="password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -68,7 +73,7 @@ const Login = () => {
               >
                 Forgot password?
               </a>
-            </div>
+            </div> */}
             <button
               type="submit"
               className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
@@ -85,6 +90,15 @@ const Login = () => {
               </Link>
             </p>
           </form>
+          <div className="flex items-center justify-center mt-6">
+          <button
+            onClick={handleGoogleLogin}
+            className="flex items-center bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-600"
+          >
+            <FcGoogle className="w-5 h-5 mr-2" />
+            Login with Google
+          </button>
+        </div>
         </div>
       </div>
     </div>
