@@ -8,6 +8,9 @@ import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import CreateAc from "../Pages/CreateAc";
 import Main from "../Pages/Main";
+import Employment from "../Pages/Employment";
+import Status from "../Pages/Status";
+import InterestedIn from "../Pages/InterestedIn";
 
 const UserRoutes=()=>{
     return(
@@ -20,6 +23,9 @@ const UserRoutes=()=>{
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/createac" element={<CreateAc/>}/>
             <Route path="/main" element={<Main/>}/>
+            <Route path="/employment" element={<Employment/>}/>
+            <Route path="/status" element={<Status/>}/>
+            <Route path="/interestedin" element={<InterestedIn/>}/>
         </Routes>
     )
 }
