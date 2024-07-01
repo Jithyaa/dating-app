@@ -11,6 +11,7 @@ import Main from "../Pages/Main";
 import Employment from "../Pages/Employment";
 import Status from "../Pages/Status";
 import InterestedIn from "../Pages/InterestedIn";
+import ProfileListing from "../Pages/ProfileListing";
 
 const UserRoutes=()=>{
     return(
@@ -26,6 +27,7 @@ const UserRoutes=()=>{
             <Route path="/employment" element={<Employment/>}/>
             <Route path="/status" element={<Status/>}/>
             <Route path="/interestedin" element={<InterestedIn/>}/>
+            <Route path="/profilelisting" element={<ProfileListing/>}/>
         </Routes>
     )
 }
